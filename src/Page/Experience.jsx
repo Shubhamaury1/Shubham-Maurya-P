@@ -59,7 +59,7 @@ function Experience() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/shubham-maurya-4a275a232/"
+                href="https://www.linkedin.com/in/shubham-maurya-developer/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn Profile"

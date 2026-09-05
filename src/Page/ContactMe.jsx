@@ -62,7 +62,7 @@ function ContactMe() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/shubham-maurya-4a275a232/"
+                href="https://www.linkedin.com/in/shubham-maurya-developer/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -89,7 +89,7 @@ function ContactMe() {
               </a>
 
               <a
-                href="mailto:shubhammaurya7408@gmail.com"
+                href="mailto:shubhamaurya74@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Email"

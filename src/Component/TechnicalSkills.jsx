@@ -31,6 +31,8 @@ import {
   SiRender,
   SiNetlify,
   SiFirebase,
+  SiNextdotjs,
+  SiPostgresql,
 } from "react-icons/si";
 
 import { VscVscode } from "react-icons/vsc";
@@ -80,7 +82,8 @@ const skillsData = [
       { name: "CSS", icon: <FaCss3Alt />, color: "text-blue-600" },
       { name: "JavaScript", icon: <FaJs />, color: "text-yellow-500" },
       { name: "React", icon: <FaReact />, color: "text-cyan-500" },
-      { name: "Bootstrap", icon: <FaBootstrap />, color: "text-purple-700" },
+      // { name: "Bootstrap", icon: <FaBootstrap />, color: "text-purple-700" },
+      { name: "Next.js", icon: <SiNextdotjs />, color: "text-gray-800" },
       { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "text-sky-500" },
     ],
   },
@@ -103,6 +106,7 @@ const skillsData = [
     skills: [
       { name: "MongoDB", icon: <SiMongodb />, color: "text-green-600" },
       { name: "MySQL", icon: <SiMysql />, color: "text-blue-700" },
+      { name: "PostgreSQL", icon: <SiPostgresql />, color: "text-blue-700" },
     ],
   },
   {

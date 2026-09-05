@@ -5,9 +5,9 @@ import {
   FaGithub,
   FaLinkedin,
   FaYoutube,
-  FaGoogle,
   FaInstagram,
 } from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
 import { motion } from "framer-motion";
 import heroimage from "../assets/feelingProud.svg";
 
@@ -69,7 +69,7 @@ export default function HeroSection() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/shubham-maurya-4a275a232/"
+              href="https://www.linkedin.com/in/shubham-maurya-developer/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
@@ -89,13 +89,13 @@ export default function HeroSection() {
             </a>
 
             <a
-              href="mailto:shubhammaurya7408@gmail.com"
+              href="mailto:shubhamaurya74@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Email Shubham"
               className="text-[#ea4335] hover:scale-115 transition transform duration-200"
             >
-              <FaGoogle />
+              <HiOutlineMail />
             </a>
 
             <a

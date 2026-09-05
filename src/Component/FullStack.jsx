@@ -12,6 +12,7 @@ import {
   SiMongodb,
   SiMysql,
   SiNpm,
+  SiNextdotjs,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -39,6 +40,7 @@ function FullStack() {
               <SiCss className="text-[#1572B6]" title="CSS" />
               <SiJavascript className="text-[#F7DF1E]" title="JavaScript" />
               <SiReact className="text-[#61DAFB]" title="React" />
+              <SiNextdotjs className="text-gray-800" title="Next.js" />
               <SiNodedotjs className="text-[#339933]" title="Node.js" />
               <SiExpress className="text-gray-800" title="Express.js" />
               <SiMongodb className="text-[#47A248]" title="MongoDB" />
