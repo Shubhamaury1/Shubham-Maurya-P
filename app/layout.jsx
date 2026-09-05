@@ -41,7 +41,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "Shubham Maurya Portfolio",
+    siteName: "Shubham Maurya",
     title: "Shubham Maurya | Full-Stack Developer",
     description:
       "Portfolio of Shubham Maurya — Full-Stack Software Developer building scalable web applications.",
@@ -107,7 +107,8 @@ export default function RootLayout({ children }) {
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         url: siteUrl,
-        name: "Shubham Maurya Portfolio",
+        name: "Shubham Maurya",
+        alternateName: "Shubham Maurya Portfolio",
         publisher: {
           "@id": `${siteUrl}/#person`,
         },
