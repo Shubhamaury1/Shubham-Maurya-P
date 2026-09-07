@@ -15,10 +15,16 @@ const fontSignature = Caveat({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://itshubham.site";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
+  applicationName: "Shubham Maurya",
+  appleWebApp: {
+    title: "Shubham Maurya",
+    statusBarStyle: "default",
+    capable: true,
+  },
   title: {
     default: "Shubham Maurya | Full-Stack Developer",
     template: "%s | Shubham Maurya",
@@ -35,13 +41,14 @@ export const metadata = {
     "Python Developer",
     "Web Developer India",
   ],
-  authors: [{ name: "Shubham Maurya" }],
+  authors: [{ name: "Shubham Maurya", url: siteUrl }],
   creator: "Shubham Maurya",
   publisher: "Shubham Maurya",
   openGraph: {
     type: "website",
     locale: "en_IN",
     siteName: "Shubham Maurya",
+    url: siteUrl,
     title: "Shubham Maurya | Full-Stack Developer",
     description:
       "Portfolio of Shubham Maurya — Full-Stack Software Developer building scalable web applications.",
@@ -51,6 +58,7 @@ export const metadata = {
     title: "Shubham Maurya | Full-Stack Developer",
     description:
       "Portfolio of Shubham Maurya — Full-Stack Software Developer.",
+    creator: "@Shubhamaury1",
   },
   icons: {
     icon: [
@@ -81,14 +89,34 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        url: siteUrl,
+        name: "Shubham Maurya",
+        alternateName: ["itshubham.site", "Shubham Maurya Portfolio", "Shubham Maurya"],
+        publisher: {
+          "@id": `${siteUrl}/#person`,
+        },
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": `${siteUrl}/#profilepage`,
+        url: siteUrl,
+        name: "Shubham Maurya",
+        mainEntity: {
+          "@id": `${siteUrl}/#person`,
+        },
+      },
+      {
         "@type": "Person",
         "@id": `${siteUrl}/#person`,
         name: "Shubham Maurya",
         jobTitle: "Full-Stack Software Developer",
         url: siteUrl,
+        image: `${siteUrl}/icon.png`,
         sameAs: [
           "https://github.com/Shubhamaury1",
-          "https://www.linkedin.com/in/shubham-maurya-4a275a232/",
+          "https://www.linkedin.com/in/shubham-maurya-developer/",
         ],
         knowsAbout: [
           "Full-Stack Web Development",
@@ -102,16 +130,6 @@ export default function RootLayout({ children }) {
           "Machine Learning",
           "Data Analysis",
         ],
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${siteUrl}/#website`,
-        url: siteUrl,
-        name: "Shubham Maurya",
-        alternateName: "Shubham Maurya Portfolio",
-        publisher: {
-          "@id": `${siteUrl}/#person`,
-        },
       },
     ],
   };

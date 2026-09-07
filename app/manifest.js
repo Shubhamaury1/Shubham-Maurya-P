@@ -1,6 +1,6 @@
 export default function manifest() {
   return {
-    name: "Shubham Maurya | Full-Stack Developer Portfolio",
+    name: "Shubham Maurya",
     short_name: "Shubham Maurya",
     description:
       "Portfolio of Shubham Maurya — Full-Stack Software Developer specializing in React, Next.js, Node.js, .NET, and Python.",

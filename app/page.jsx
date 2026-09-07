@@ -12,6 +12,7 @@ export const metadata = {
     description:
       "Explore the portfolio of Shubham Maurya — Full-Stack Developer building scalable web applications and data solutions.",
     url: "/",
+    siteName: "Shubham Maurya",
   },
 };
 
