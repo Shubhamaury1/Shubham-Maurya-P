@@ -22,7 +22,7 @@ const deployedProjects = [
       { type: "image", src: expressIcon, name: "Express.js" },
       { type: "image", src: mongodbIcon, name: "MongoDB" },
     ],
-    link: "https://wash-go-gamma.vercel.app/",
+    link: "https://washgo.store",
   },
   {
     title: "House Modelling Website",
